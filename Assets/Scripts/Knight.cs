@@ -17,7 +17,10 @@ public class Knight : MonoBehaviour
     {
         
     }
-
+    
+    /// <summary>
+    /// Repositions the knight on the board based on the color of the knight (checked from the name of the GameObject)
+    /// </summary>
     public void RepositionOnBoard()
     {
         switch(id)

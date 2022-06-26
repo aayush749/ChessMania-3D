@@ -18,6 +18,9 @@ public class Bishop : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Repositions the bishop on the board based on the color of the bishop (checked from the name of the GameObject)
+    /// </summary>
     public void RepositionOnBoard()
     {
         switch(id)

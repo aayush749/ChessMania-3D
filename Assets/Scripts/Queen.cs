@@ -18,7 +18,7 @@ public class Queen : MonoBehaviour
     }
 
     /// <summary>
-    /// Repositions the queen on the board based on the color of the king (checked from the name of the GameObject)
+    /// Repositions the queen on the board based on the color of the queen (checked from the name of the GameObject)
     /// </summary>
     public void RepositionOnBoard()
     {

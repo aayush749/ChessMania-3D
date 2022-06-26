@@ -35,7 +35,14 @@ public class ChessBoard : MonoBehaviour
         AssertPiecesAvailability();
         game = new ChessGame();
         Debug.Log($"Turn of color: {game.WhoseTurn}");
-        ResetBoard();
+        try
+        {
+            ResetBoard();
+            Debug.Log("Sucessfully performed action: Board Reset");
+        } catch(Exception e)
+        {
+            Debug.LogError($"Exception thrown while resetting the board's pieces: {e}");
+        }
     }
 
     // Update is called once per frame
@@ -148,7 +155,8 @@ public class ChessBoard : MonoBehaviour
         positionMat[(int) ChessDotNet.File.H][7 -1] = new Vector2(0.2078561f, 0.1418725f);
         positionMat[(int) ChessDotNet.File.H][8 -1] = new Vector2(0.2078561f, 0.2152513f);
     }
-    private void ResetBoard()
+
+    public void ResetBoard()
     {
         Debug.Log("Resetting Chess board pieces");
 
@@ -170,17 +178,20 @@ public class ChessBoard : MonoBehaviour
         // Reposition Pawns
         RepositionPawns();
     }
-
     private void RepositionPawns()
     {
-        throw new NotImplementedException();
+        foreach(Pawn pawn in pawnPieces)
+        {
+            pawn.RepositionOnBoard();
+        }
     }
-
     private void RepositionRooks()
     {
-        throw new NotImplementedException();
+        foreach(Rook rook in rookPieces)
+        {
+            rook.RepositionOnBoard();
+        }
     }
-
     private void RepositionKnight()
     {
         foreach(Knight knight in knightPieces)
@@ -188,7 +199,6 @@ public class ChessBoard : MonoBehaviour
             knight.RepositionOnBoard();
         }
     }
-
     private void RepositionBishops()
     {
         foreach(Bishop bishop in bishopPieces)
