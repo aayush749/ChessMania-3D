@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Pawn : MonoBehaviour
 {
+    [SerializeField]
+    private float incrementValPercent = 2.5f;
+
     int id;
     string color;
     void OnEnable()
@@ -24,7 +27,7 @@ public class Pawn : MonoBehaviour
     /// <summary>
     /// Repositions the pawn on the board based on the color of the pawn (checked from the name of the GameObject)
     /// </summary>
-    public void RepositionOnBoard()
+    public void RepositionOnBoard(bool moveSmoothly = false)
     {
         ChessDotNet.File colLetter;
         int row;
@@ -84,10 +87,29 @@ public class Pawn : MonoBehaviour
         }
 
         // Now reposition on the board
-        transform.position = new Vector3(
+        Vector3 newPos = new Vector3(
             ChessBoard.GetBoardPos(colLetter, row).x,
             transform.position.y,
             ChessBoard.GetBoardPos(colLetter, row).y
         );
+        
+        if (moveSmoothly)
+        {
+            MoveToPos(newPos);
+        }
+        else
+        {
+            transform.position = newPos;
+        }
+    }
+
+    public void MoveToPos(Vector2 location)
+    {
+        StartCoroutine(Movement.MoveCoroutine(location, transform, incrementValPercent));
+    }
+
+    public void MoveToPos(Vector3 location)
+    {
+        MoveToPos(location);
     }
 }

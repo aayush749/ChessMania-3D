@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Rook : MonoBehaviour
 {
+    [SerializeField]
+    private float incrementValPercent = 2.5f;
+
     int id;
     string color;
     void OnEnable()
@@ -21,8 +24,9 @@ public class Rook : MonoBehaviour
     /// <summary>
     /// Repositions the rook on the board based on the color of the rook (checked from the name of the GameObject)
     /// </summary>
-    public void RepositionOnBoard()
+    public void RepositionOnBoard(bool moveSmoothly = false)
     {
+        Vector3 newPos = new Vector3();
         switch(id)
         {
             case 1:
@@ -31,7 +35,7 @@ public class Rook : MonoBehaviour
                 {
                     case "White":
                     {
-                        transform.position = new Vector3(
+                        newPos = new Vector3(
                             ChessBoard.GetBoardPos(ChessDotNet.File.A, 1).x,
                             transform.position.y,
                             ChessBoard.GetBoardPos(ChessDotNet.File.A, 1).y
@@ -40,7 +44,7 @@ public class Rook : MonoBehaviour
                     }
                     case "Black":
                     {
-                        transform.position = new Vector3(
+                        newPos = new Vector3(
                             ChessBoard.GetBoardPos(ChessDotNet.File.A, 8).x,
                             transform.position.y,
                             ChessBoard.GetBoardPos(ChessDotNet.File.A, 8).y
@@ -58,7 +62,7 @@ public class Rook : MonoBehaviour
                 {
                     case "White":
                     {
-                        transform.position = new Vector3(
+                        newPos = new Vector3(
                             ChessBoard.GetBoardPos(ChessDotNet.File.H, 1).x,
                             transform.position.y,
                             ChessBoard.GetBoardPos(ChessDotNet.File.H, 1).y
@@ -67,7 +71,7 @@ public class Rook : MonoBehaviour
                     }
                     case "Black":
                     {
-                        transform.position = new Vector3(
+                        newPos = new Vector3(
                             ChessBoard.GetBoardPos(ChessDotNet.File.H, 8).x,
                             transform.position.y,
                             ChessBoard.GetBoardPos(ChessDotNet.File.H, 8).y
@@ -83,5 +87,25 @@ public class Rook : MonoBehaviour
             default:
                 break;
         }
+
+        if (moveSmoothly)
+        {
+            MoveToPos(newPos);
+        }
+        else
+        {
+            transform.position = newPos;
+        }
     }
+
+    public void MoveToPos(Vector3 location)
+    {
+        MoveToPos(new Vector2(location.x, location.z));
+    }
+
+    public void MoveToPos(Vector2 location)
+    {
+        StartCoroutine(Movement.MoveCoroutine(location, transform, incrementValPercent));
+    }
+
 }

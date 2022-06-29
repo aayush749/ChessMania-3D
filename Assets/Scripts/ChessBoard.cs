@@ -189,35 +189,35 @@ public class ChessBoard : MonoBehaviour
     {
         foreach(Rook rook in rookPieces)
         {
-            rook.RepositionOnBoard();
+            rook.RepositionOnBoard(true);
         }
     }
     private void RepositionKnight()
     {
         foreach(Knight knight in knightPieces)
         {
-            knight.RepositionOnBoard();
+            knight.RepositionOnBoard(true);
         }
     }
     private void RepositionBishops()
     {
         foreach(Bishop bishop in bishopPieces)
         {
-            bishop.RepositionOnBoard();
+            bishop.RepositionOnBoard(true);
         }
     }
     private void RepositionKings()
     {
         foreach(King king in kingPieces)
         {
-            king.RepositionOnBoard();
+            king.RepositionOnBoard(true);
         }
     }
     private void RepositionQueens()
     {
         foreach(Queen queen in queenPieces)
         {
-            queen.RepositionOnBoard();
+            queen.RepositionOnBoard(true);
         }
     }
 }

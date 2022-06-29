@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Knight : MonoBehaviour
 {
+    [SerializeField]
+    private float incrementValPercent = 2.5f;
     int id;
     string color;
     void OnEnable()
@@ -21,8 +23,9 @@ public class Knight : MonoBehaviour
     /// <summary>
     /// Repositions the knight on the board based on the color of the knight (checked from the name of the GameObject)
     /// </summary>
-    public void RepositionOnBoard()
+    public void RepositionOnBoard(bool moveSmoothly = false)
     {
+        Vector3 newPos = new Vector3();
         switch(id)
         {
             case 1:
@@ -31,7 +34,7 @@ public class Knight : MonoBehaviour
                 {
                     case "White":
                     {
-                        transform.position = new Vector3(
+                        newPos = new Vector3(
                             ChessBoard.GetBoardPos(ChessDotNet.File.B, 1).x,
                             transform.position.y,
                             ChessBoard.GetBoardPos(ChessDotNet.File.B, 1).y
@@ -40,7 +43,7 @@ public class Knight : MonoBehaviour
                     }
                     case "Black":
                     {
-                        transform.position = new Vector3(
+                        newPos = new Vector3(
                             ChessBoard.GetBoardPos(ChessDotNet.File.B, 8).x,
                             transform.position.y,
                             ChessBoard.GetBoardPos(ChessDotNet.File.B, 8).y
@@ -58,7 +61,7 @@ public class Knight : MonoBehaviour
                 {
                     case "White":
                     {
-                        transform.position = new Vector3(
+                        newPos = new Vector3(
                             ChessBoard.GetBoardPos(ChessDotNet.File.G, 1).x,
                             transform.position.y,
                             ChessBoard.GetBoardPos(ChessDotNet.File.G, 1).y
@@ -67,7 +70,7 @@ public class Knight : MonoBehaviour
                     }
                     case "Black":
                     {
-                        transform.position = new Vector3(
+                        newPos = new Vector3(
                             ChessBoard.GetBoardPos(ChessDotNet.File.G, 8).x,
                             transform.position.y,
                             ChessBoard.GetBoardPos(ChessDotNet.File.G, 8).y
@@ -83,5 +86,24 @@ public class Knight : MonoBehaviour
             default:
                 break;
         }
+
+        if (moveSmoothly)
+        {
+            MoveToPos(newPos);
+        }
+        else
+        {
+            transform.position = newPos;
+        }
+    }
+
+    public void MoveToPos(Vector2 location)
+    {
+        StartCoroutine(Movement.MoveCoroutine(location, transform, incrementValPercent));
+    }
+
+    public void MoveToPos(Vector3 location)
+    {
+        MoveToPos(new Vector2(location.x, location.z));
     }
 }
