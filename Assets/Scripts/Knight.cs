@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,10 +9,16 @@ public class Knight : MonoBehaviour
     private float incrementValPercent = 2.5f;
     int id;
     string color;
+
+    public ChessDotNet.File col { get; private set; }
+    
+    public int row { get; private set; }
     void OnEnable()
     {
         id = name.Contains("0") ? 1 : 2;
         color = name.Contains("White") ? "White" : "Black";
+
+        GetCorrectPositionOnBoard();
     }
 
     // Update is called once per frame
@@ -20,12 +27,8 @@ public class Knight : MonoBehaviour
         
     }
     
-    /// <summary>
-    /// Repositions the knight on the board based on the color of the knight (checked from the name of the GameObject)
-    /// </summary>
-    public void RepositionOnBoard(bool moveSmoothly = false)
+    private void GetCorrectPositionOnBoard()
     {
-        Vector3 newPos = new Vector3();
         switch(id)
         {
             case 1:
@@ -34,20 +37,14 @@ public class Knight : MonoBehaviour
                 {
                     case "White":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.B, 1).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.B, 1).y
-                        );
+                        col = ChessDotNet.File.B;
+                        row = 1;
                         break;
                     }
                     case "Black":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.B, 8).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.B, 8).y
-                        );
+                        col = ChessDotNet.File.B;
+                        row = 8;
                         break;
                     }
                     default:
@@ -61,20 +58,14 @@ public class Knight : MonoBehaviour
                 {
                     case "White":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.G, 1).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.G, 1).y
-                        );
+                        col = ChessDotNet.File.G;
+                        row = 1;
                         break;
                     }
                     case "Black":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.G, 8).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.G, 8).y
-                        );
+                        col = ChessDotNet.File.G;
+                        row = 8;
                         break;
                     }
                     default:
@@ -86,7 +77,19 @@ public class Knight : MonoBehaviour
             default:
                 break;
         }
+    }
 
+    /// <summary>
+    /// Repositions the knight on the board based on the color of the knight (checked from the name of the GameObject)
+    /// </summary>
+    public void RepositionOnBoard(bool moveSmoothly = false)
+    {
+        Vector3 newPos = new Vector3(
+            ChessBoard.GetBoardPos(col, row).x,
+            transform.position.y,
+            ChessBoard.GetBoardPos(col, row).y
+        );
+        
         if (moveSmoothly)
         {
             MoveToPos(newPos);

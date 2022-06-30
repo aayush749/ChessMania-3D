@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7598188196431600245}
   - component: {fileID: 5158384742098065950}
   - component: {fileID: 3952596872238277994}
+  - component: {fileID: 6035414177860790982}
   m_Layer: 0
   m_Name: Rook-White-0
   m_TagString: Untagged
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6035414177860790982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385556743198130262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbdf9f5ea20359439d129b75f5c13b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &2239218367804611679
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +106,7 @@ GameObject:
   - component: {fileID: 6471710614493232082}
   - component: {fileID: 5648246557185985190}
   - component: {fileID: 8761825312834028069}
+  - component: {fileID: 6911662644323776205}
   m_Layer: 0
   m_Name: Queen-White
   m_TagString: Untagged
@@ -162,6 +177,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6911662644323776205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2239218367804611679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f5704abb4c4c04488970413cd0fab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &2278039512468415637
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +201,7 @@ GameObject:
   - component: {fileID: 3103813864892731813}
   - component: {fileID: 5458315211281984596}
   - component: {fileID: 707113290710663615}
+  - component: {fileID: 6874003133769223687}
   m_Layer: 0
   m_Name: Pawn-White-4
   m_TagString: Untagged
@@ -243,6 +272,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6874003133769223687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2278039512468415637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &2537655030326530855
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +296,7 @@ GameObject:
   - component: {fileID: 4514055141447508345}
   - component: {fileID: 6753835585066061373}
   - component: {fileID: 6205764220953976753}
+  - component: {fileID: 7192224956768319925}
   m_Layer: 0
   m_Name: Pawn-Black-0
   m_TagString: Untagged
@@ -324,6 +367,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7192224956768319925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537655030326530855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &2542608935337525040
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +391,7 @@ GameObject:
   - component: {fileID: 4098156074968800055}
   - component: {fileID: 2783107298329992649}
   - component: {fileID: 6776545887187907883}
+  - component: {fileID: 7183607444516476324}
   m_Layer: 0
   m_Name: Pawn-Black-4
   m_TagString: Untagged
@@ -405,6 +462,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7183607444516476324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542608935337525040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &2557985750751378708
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +486,7 @@ GameObject:
   - component: {fileID: 1995300330124103305}
   - component: {fileID: 1582552072982343676}
   - component: {fileID: 1952494871469192472}
+  - component: {fileID: 7171894235871614856}
   m_Layer: 0
   m_Name: Rook-Black-0
   m_TagString: Untagged
@@ -486,6 +557,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7171894235871614856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557985750751378708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbdf9f5ea20359439d129b75f5c13b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &2742477230975103754
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +581,7 @@ GameObject:
   - component: {fileID: 3559411291113399324}
   - component: {fileID: 8150174030882951221}
   - component: {fileID: 4762582183281049002}
+  - component: {fileID: 7419496978324216218}
   m_Layer: 0
   m_Name: Queen-Black
   m_TagString: Untagged
@@ -567,6 +652,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7419496978324216218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2742477230975103754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f5704abb4c4c04488970413cd0fab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &2961273508329625048
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +676,7 @@ GameObject:
   - component: {fileID: 655124432712630876}
   - component: {fileID: 3060785602998639094}
   - component: {fileID: 7534123837982606399}
+  - component: {fileID: 7629356304641064780}
   m_Layer: 0
   m_Name: Knight-White-0
   m_TagString: Untagged
@@ -648,6 +747,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7629356304641064780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961273508329625048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7255abd83c0d4414f852f8c5e1f2453a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &3532815058204736482
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +771,7 @@ GameObject:
   - component: {fileID: 6730420495713191195}
   - component: {fileID: 7402793827750298015}
   - component: {fileID: 8719713849646884687}
+  - component: {fileID: 8214408627611947378}
   m_Layer: 0
   m_Name: Bishop-Black-1
   m_TagString: Untagged
@@ -729,6 +842,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8214408627611947378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532815058204736482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa2d5f3ed5f41a4baac45234b13dcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &3629341684575848437
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +866,7 @@ GameObject:
   - component: {fileID: 1815487054930130621}
   - component: {fileID: 7364609415382700683}
   - component: {fileID: 6221785250083164343}
+  - component: {fileID: 8261403522427137383}
   m_Layer: 0
   m_Name: Pawn-White-7
   m_TagString: Untagged
@@ -810,6 +937,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8261403522427137383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3629341684575848437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &3635948467800269603
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,6 +961,7 @@ GameObject:
   - component: {fileID: 5557033401143588978}
   - component: {fileID: 7425223153272281281}
   - component: {fileID: 7111417299568560223}
+  - component: {fileID: 8254287149384010161}
   m_Layer: 0
   m_Name: Bishop-White-0
   m_TagString: Untagged
@@ -891,6 +1032,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8254287149384010161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3635948467800269603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa2d5f3ed5f41a4baac45234b13dcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &4104426041995635930
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +1056,7 @@ GameObject:
   - component: {fileID: 5118601151061889865}
   - component: {fileID: 7767558679353771736}
   - component: {fileID: 1326425237714505884}
+  - component: {fileID: 8650777231217673802}
   m_Layer: 0
   m_Name: Rook-Black-1
   m_TagString: Untagged
@@ -972,6 +1127,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8650777231217673802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4104426041995635930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbdf9f5ea20359439d129b75f5c13b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &4202414207076165590
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,6 +1151,7 @@ GameObject:
   - component: {fileID: 4041436611633747836}
   - component: {fileID: 4326056220201319711}
   - component: {fileID: 7136630991523027125}
+  - component: {fileID: 8838768123580714310}
   m_Layer: 0
   m_Name: Knight-Black-0
   m_TagString: Untagged
@@ -1053,6 +1222,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8838768123580714310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4202414207076165590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7255abd83c0d4414f852f8c5e1f2453a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &4248013762365939075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1246,7 @@ GameObject:
   - component: {fileID: 5909962788208637166}
   - component: {fileID: 2415628321839911288}
   - component: {fileID: 2402963144206354604}
+  - component: {fileID: 8794298281590896401}
   m_Layer: 0
   m_Name: Rook-White-1
   m_TagString: Untagged
@@ -1134,6 +1317,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8794298281590896401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4248013762365939075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbdf9f5ea20359439d129b75f5c13b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &5062515714214539070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1341,7 @@ GameObject:
   - component: {fileID: 985901980173298234}
   - component: {fileID: 5187867343457105920}
   - component: {fileID: 79262078387229322}
+  - component: {fileID: 484645534910399918}
   m_Layer: 0
   m_Name: Pawn-White-5
   m_TagString: Untagged
@@ -1215,6 +1412,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &484645534910399918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5062515714214539070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &5316363842567392287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1436,7 @@ GameObject:
   - component: {fileID: 7649188003072308443}
   - component: {fileID: 1772507886644220665}
   - component: {fileID: 5462413664985287712}
+  - component: {fileID: 666498714569975437}
   m_Layer: 0
   m_Name: Pawn-White-3
   m_TagString: Untagged
@@ -1296,6 +1507,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &666498714569975437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5316363842567392287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &5492434837696247846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,6 +1594,7 @@ GameObject:
   - component: {fileID: 4316874974829622662}
   - component: {fileID: 1912306101658084068}
   - component: {fileID: 665967245326048904}
+  - component: {fileID: 889332338716416681}
   m_Layer: 0
   m_Name: Pawn-Black-1
   m_TagString: Untagged
@@ -1440,6 +1665,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &889332338716416681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5525897772746862651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &5560295615483290130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1689,7 @@ GameObject:
   - component: {fileID: 7471957278063645518}
   - component: {fileID: 6202239652226531747}
   - component: {fileID: 5697949529974528308}
+  - component: {fileID: 995936347821459586}
   m_Layer: 0
   m_Name: King-White
   m_TagString: Untagged
@@ -1521,6 +1760,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &995936347821459586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5560295615483290130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b70622b7adc944cb17005258824491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &5816611359458582659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1784,7 @@ GameObject:
   - component: {fileID: 4187328223101645140}
   - component: {fileID: 1594144673772168763}
   - component: {fileID: 3191211981019532398}
+  - component: {fileID: 1171116795810056721}
   m_Layer: 0
   m_Name: Pawn-Black-2
   m_TagString: Untagged
@@ -1602,6 +1855,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1171116795810056721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5816611359458582659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &6270200716151212242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1879,7 @@ GameObject:
   - component: {fileID: 20913763349000487}
   - component: {fileID: 2666179678339265711}
   - component: {fileID: 5460732815090450587}
+  - component: {fileID: 1728361804847948354}
   m_Layer: 0
   m_Name: Pawn-Black-5
   m_TagString: Untagged
@@ -1683,6 +1950,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1728361804847948354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270200716151212242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &6630934159806616161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1974,7 @@ GameObject:
   - component: {fileID: 8456503817583526798}
   - component: {fileID: 4164150480773963385}
   - component: {fileID: 3578711852381889054}
+  - component: {fileID: 2089013610847254771}
   m_Layer: 0
   m_Name: Knight-White-1
   m_TagString: Untagged
@@ -1764,6 +2045,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2089013610847254771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6630934159806616161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7255abd83c0d4414f852f8c5e1f2453a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &6846436281373529927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,6 +2069,7 @@ GameObject:
   - component: {fileID: 973536445335901357}
   - component: {fileID: 4983746156223049672}
   - component: {fileID: 764161186978052274}
+  - component: {fileID: 2304444661434613205}
   m_Layer: 0
   m_Name: Pawn-Black-3
   m_TagString: Untagged
@@ -1845,6 +2140,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2304444661434613205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6846436281373529927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &7866331740603409689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,6 +2164,7 @@ GameObject:
   - component: {fileID: 3666892114138217166}
   - component: {fileID: 6191545273704771342}
   - component: {fileID: 5321398419366961199}
+  - component: {fileID: 3301902385551282059}
   m_Layer: 0
   m_Name: Pawn-White-0
   m_TagString: Untagged
@@ -1926,6 +2235,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3301902385551282059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866331740603409689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &7915083395509061359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +2259,7 @@ GameObject:
   - component: {fileID: 1291326823374689302}
   - component: {fileID: 8345790483237592491}
   - component: {fileID: 1293616306219393458}
+  - component: {fileID: 3251708720613059709}
   m_Layer: 0
   m_Name: Chess Board
   m_TagString: Untagged
@@ -2009,6 +2332,56 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3251708720613059709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915083395509061359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340fcd0aed77cc640970f5e238de2389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kingPieces:
+  - {fileID: 3344873410515425886}
+  - {fileID: 995936347821459586}
+  queenPieces:
+  - {fileID: 7419496978324216218}
+  - {fileID: 6911662644323776205}
+  bishopPieces:
+  - {fileID: 4367623183844279345}
+  - {fileID: 8214408627611947378}
+  - {fileID: 8254287149384010161}
+  - {fileID: 3591463208933753160}
+  knightPieces:
+  - {fileID: 8838768123580714310}
+  - {fileID: 3565053315227270634}
+  - {fileID: 7629356304641064780}
+  - {fileID: 2089013610847254771}
+  rookPieces:
+  - {fileID: 7171894235871614856}
+  - {fileID: 8650777231217673802}
+  - {fileID: 6035414177860790982}
+  - {fileID: 8794298281590896401}
+  pawnPieces:
+  - {fileID: 7192224956768319925}
+  - {fileID: 889332338716416681}
+  - {fileID: 1171116795810056721}
+  - {fileID: 2304444661434613205}
+  - {fileID: 7183607444516476324}
+  - {fileID: 1728361804847948354}
+  - {fileID: 3729835329996958642}
+  - {fileID: 3623120704301376949}
+  - {fileID: 3301902385551282059}
+  - {fileID: 4510868034130233583}
+  - {fileID: 3393726721546396363}
+  - {fileID: 666498714569975437}
+  - {fileID: 6874003133769223687}
+  - {fileID: 484645534910399918}
+  - {fileID: 4251391203899528407}
+  - {fileID: 8261403522427137383}
 --- !u!1 &7967717761917694158
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,6 +2393,7 @@ GameObject:
   - component: {fileID: 4919702193266408780}
   - component: {fileID: 2613702869728144223}
   - component: {fileID: 6742515854495220151}
+  - component: {fileID: 3344873410515425886}
   m_Layer: 0
   m_Name: King-Black
   m_TagString: Untagged
@@ -2090,6 +2464,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3344873410515425886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7967717761917694158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b70622b7adc944cb17005258824491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &8061608032628459609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,6 +2488,7 @@ GameObject:
   - component: {fileID: 8265869819138262571}
   - component: {fileID: 5289092415797671789}
   - component: {fileID: 8068946527680287511}
+  - component: {fileID: 3393726721546396363}
   m_Layer: 0
   m_Name: Pawn-White-2
   m_TagString: Untagged
@@ -2171,6 +2559,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3393726721546396363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061608032628459609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &8155761027173510100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,6 +2583,7 @@ GameObject:
   - component: {fileID: 7208085340816622582}
   - component: {fileID: 7679766456212209141}
   - component: {fileID: 8356466217163195971}
+  - component: {fileID: 3591463208933753160}
   m_Layer: 0
   m_Name: Bishop-White-1
   m_TagString: Untagged
@@ -2252,6 +2654,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3591463208933753160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155761027173510100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa2d5f3ed5f41a4baac45234b13dcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &8179091806818162554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,6 +2678,7 @@ GameObject:
   - component: {fileID: 4054319620080604985}
   - component: {fileID: 3317382409951233596}
   - component: {fileID: 7327812784922988299}
+  - component: {fileID: 3565053315227270634}
   m_Layer: 0
   m_Name: Knight-Black-1
   m_TagString: Untagged
@@ -2333,6 +2749,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3565053315227270634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8179091806818162554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7255abd83c0d4414f852f8c5e1f2453a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &8268482087480741671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2773,7 @@ GameObject:
   - component: {fileID: 4481182996081610823}
   - component: {fileID: 4429369815843015391}
   - component: {fileID: 2220175542303793730}
+  - component: {fileID: 3623120704301376949}
   m_Layer: 0
   m_Name: Pawn-Black-7
   m_TagString: Untagged
@@ -2414,6 +2844,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3623120704301376949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268482087480741671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &8303349959049920802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2425,6 +2868,7 @@ GameObject:
   - component: {fileID: 4953765088474223610}
   - component: {fileID: 7532600110592710792}
   - component: {fileID: 6018057847040507589}
+  - component: {fileID: 3729835329996958642}
   m_Layer: 0
   m_Name: Pawn-Black-6
   m_TagString: Untagged
@@ -2495,6 +2939,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3729835329996958642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8303349959049920802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &8793168826010287685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,6 +2963,7 @@ GameObject:
   - component: {fileID: 3362408808338426361}
   - component: {fileID: 8320111503828687246}
   - component: {fileID: 3129984673309849905}
+  - component: {fileID: 4251391203899528407}
   m_Layer: 0
   m_Name: Pawn-White-6
   m_TagString: Untagged
@@ -2576,6 +3034,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4251391203899528407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8793168826010287685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &8963447036138221219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,6 +3058,7 @@ GameObject:
   - component: {fileID: 5622511787820775056}
   - component: {fileID: 6829667571156418861}
   - component: {fileID: 525801233494552613}
+  - component: {fileID: 4367623183844279345}
   m_Layer: 0
   m_Name: Bishop-Black-0
   m_TagString: Untagged
@@ -2657,6 +3129,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4367623183844279345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8963447036138221219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa2d5f3ed5f41a4baac45234b13dcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1
 --- !u!1 &9106761270580224637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,6 +3153,7 @@ GameObject:
   - component: {fileID: 8431606078737504998}
   - component: {fileID: 4656258396619514805}
   - component: {fileID: 1038062627872197440}
+  - component: {fileID: 4510868034130233583}
   m_Layer: 0
   m_Name: Pawn-White-1
   m_TagString: Untagged
@@ -2738,3 +3224,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4510868034130233583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9106761270580224637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de82c3b7aae235048b28f535256252e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementValPercent: 0.1

@@ -7,6 +7,9 @@ public class King : MonoBehaviour
     [SerializeField]
     private float incrementValPercent = 2.5f;
     string color;
+
+    public ChessDotNet.File col { get; private set; }
+    public int row { get; private set; }
     void OnEnable()
     {
         // convert percent to float
@@ -14,6 +17,8 @@ public class King : MonoBehaviour
                                 incrementValPercent / 100.0f : incrementValPercent;
 
         color = name.Contains("White") ? "White" : "Black";
+
+        GetCorrectPositionOnBoard();
     }
 
     // Update is called once per frame
@@ -22,30 +27,30 @@ public class King : MonoBehaviour
         
     }
 
+    private void GetCorrectPositionOnBoard()
+    {
+        if (color.Equals("White"))
+        {
+            col = ChessDotNet.File.E;
+            row = 1;
+        }
+        else
+        {
+            col = ChessDotNet.File.E;
+            row = 8;
+        }
+    }
+
     /// <summary>
     /// Repositions the king on the board based on the color of the king (checked from the name of the GameObject)
     /// </summary>
     public void RepositionOnBoard(bool moveSmoothly = false)
     {
-        Vector3 newPos;
-        if (color.Equals("White"))
-        {
-            newPos = new Vector3(
-                ChessBoard.GetBoardPos(ChessDotNet.File.E, 1).x,
-                transform.position.y,
-                ChessBoard.GetBoardPos(ChessDotNet.File.E, 1).y
-            );
-        }
-        else
-        {
-            newPos = new Vector3(
-                ChessBoard.GetBoardPos(ChessDotNet.File.E, 8).x,
-                transform.position.y,
-                ChessBoard.GetBoardPos(ChessDotNet.File.E, 8).y
-            );
-
-        }
-
+        Vector3 newPos = new Vector3(
+            ChessBoard.GetBoardPos(col, row).x,
+            transform.position.y,
+            ChessBoard.GetBoardPos(col, row).y
+        );
         if (moveSmoothly)
         {
             MoveToPos(newPos);

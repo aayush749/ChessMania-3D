@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,10 +10,16 @@ public class Rook : MonoBehaviour
 
     int id;
     string color;
+
+    public ChessDotNet.File col {get; private set; }
+    public int row { get; private set; }
+    
     void OnEnable()
     {
         id = name.Contains("0") ? 1 : 2;
         color = name.Contains("White") ? "White" : "Black";        
+
+        GetCorrectPositionOnBoard();
     }
 
     // Update is called once per frame
@@ -21,12 +28,8 @@ public class Rook : MonoBehaviour
         
     }
 
-    /// <summary>
-    /// Repositions the rook on the board based on the color of the rook (checked from the name of the GameObject)
-    /// </summary>
-    public void RepositionOnBoard(bool moveSmoothly = false)
+    private void GetCorrectPositionOnBoard()
     {
-        Vector3 newPos = new Vector3();
         switch(id)
         {
             case 1:
@@ -35,20 +38,14 @@ public class Rook : MonoBehaviour
                 {
                     case "White":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.A, 1).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.A, 1).y
-                        );
+                        row = 1;
+                        col = ChessDotNet.File.A;
                         break;
                     }
                     case "Black":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.A, 8).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.A, 8).y
-                        );
+                        row = 8;
+                        col = ChessDotNet.File.A;
                         break;
                     }
                     default:
@@ -62,20 +59,14 @@ public class Rook : MonoBehaviour
                 {
                     case "White":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.H, 1).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.H, 1).y
-                        );
+                        row = 1;
+                        col = ChessDotNet.File.H;
                         break;
                     }
                     case "Black":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.H, 8).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.H, 8).y
-                        );
+                        row = 8;
+                        col = ChessDotNet.File.H;
                         break;
                     }
                     default:
@@ -87,6 +78,17 @@ public class Rook : MonoBehaviour
             default:
                 break;
         }
+    }
+    /// <summary>
+    /// Repositions the rook on the board based on the color of the rook (checked from the name of the GameObject)
+    /// </summary>
+    public void RepositionOnBoard(bool moveSmoothly = false)
+    {
+        Vector3 newPos = new Vector3(
+            ChessBoard.GetBoardPos(col, row).x,
+            transform.position.y,
+            ChessBoard.GetBoardPos(col, row).y
+        );        
 
         if (moveSmoothly)
         {

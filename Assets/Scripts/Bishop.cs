@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,10 +10,16 @@ public class Bishop : MonoBehaviour
 
     int id;
     string color;
+
+    public ChessDotNet.File col { get; private set; }
+    public int row { get; private set; }
+
     void OnEnable()
     {
         id = name.Contains("0") ? 1 : 2;
         color = name.Contains("White") ? "White" : "Black";
+
+        GetCorrectPositionOnBoard();
     }
 
     // Update is called once per frame
@@ -21,12 +28,8 @@ public class Bishop : MonoBehaviour
         
     }
 
-    /// <summary>
-    /// Repositions the bishop on the board based on the color of the bishop (checked from the name of the GameObject)
-    /// </summary>
-    public void RepositionOnBoard(bool moveSmoothly = false)
+    private void GetCorrectPositionOnBoard()
     {
-        Vector3 newPos = new Vector3();
         switch(id)
         {
             case 1:
@@ -35,20 +38,14 @@ public class Bishop : MonoBehaviour
                 {
                     case "White":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.C, 1).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.C, 1).y
-                        );
+                        col = ChessDotNet.File.C;
+                        row = 1;
                         break;
                     }
                     case "Black":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.C, 8).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.C, 8).y
-                        );
+                        col = ChessDotNet.File.C;
+                        row = 8;
                         break;
                     }
                     default:
@@ -62,20 +59,14 @@ public class Bishop : MonoBehaviour
                 {
                     case "White":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.F, 1).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.F, 1).y
-                        );
+                        col = ChessDotNet.File.F;
+                        row = 1;
                         break;
                     }
                     case "Black":
                     {
-                        newPos = new Vector3(
-                            ChessBoard.GetBoardPos(ChessDotNet.File.F, 8).x,
-                            transform.position.y,
-                            ChessBoard.GetBoardPos(ChessDotNet.File.F, 8).y
-                        );
+                        col = ChessDotNet.File.F;
+                        row = 8;
                         break;
                     }
                     default:
@@ -87,6 +78,18 @@ public class Bishop : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    /// <summary>
+    /// Repositions the bishop on the board based on the color of the bishop (checked from the name of the GameObject)
+    /// </summary>
+    public void RepositionOnBoard(bool moveSmoothly = false)
+    {
+        Vector3 newPos = new Vector3(
+            ChessBoard.GetBoardPos(col, row).x,
+            transform.position.y,
+            ChessBoard.GetBoardPos(col, row).y
+        );        
 
         if (moveSmoothly)
         {

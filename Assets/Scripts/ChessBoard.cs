@@ -182,35 +182,55 @@ public class ChessBoard : MonoBehaviour
     {
         foreach(Pawn pawn in pawnPieces)
         {
-            pawn.RepositionOnBoard();
+            if (pawn.transform.position.x != GetBoardPos(pawn.col, pawn.row).x || 
+                pawn.transform.position.z != GetBoardPos(pawn.col, pawn.row).y)
+            {
+                pawn.RepositionOnBoard(true);
+            }
         }
     }
     private void RepositionRooks()
     {
         foreach(Rook rook in rookPieces)
         {
-            rook.RepositionOnBoard(true);
+            if (rook.transform.position.x != GetBoardPos(rook.col, rook.row).x || 
+                rook.transform.position.z != GetBoardPos(rook.col, rook.row).y)
+            {
+                rook.RepositionOnBoard(true);
+            }
         }
     }
     private void RepositionKnight()
     {
         foreach(Knight knight in knightPieces)
         {
-            knight.RepositionOnBoard(true);
+            if (knight.transform.position.x != GetBoardPos(knight.col, knight.row).x || 
+                knight.transform.position.z != GetBoardPos(knight.col, knight.row).y)
+            {
+                knight.RepositionOnBoard(true);
+            }
         }
     }
     private void RepositionBishops()
     {
         foreach(Bishop bishop in bishopPieces)
         {
-            bishop.RepositionOnBoard(true);
+            if (bishop.transform.position.x != GetBoardPos(bishop.col, bishop.row).x || 
+                bishop.transform.position.z != GetBoardPos(bishop.col, bishop.row).y)
+            {
+                bishop.RepositionOnBoard(true);
+            }
         }
     }
     private void RepositionKings()
     {
         foreach(King king in kingPieces)
         {
-            king.RepositionOnBoard(true);
+            if (king.transform.position.x != GetBoardPos(king.col, king.row).x || 
+                king.transform.position.z != GetBoardPos(king.col, king.row).y)
+            {
+                king.RepositionOnBoard(true);    
+            }
         }
     }
     private void RepositionQueens()
