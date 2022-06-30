@@ -11,12 +11,19 @@ public static class Movement
             location.y
         );
 
-        float initialDist = (transform.position - finalPosVec3).magnitude;
-        float curDist = initialDist;
-        while(curDist >= 0.01f)
+        float initialDist = 0.0f;
+        while(true)
         {
-            Vector3 dirVec = (finalPosVec3 - transform.position).normalized;
-            float incrementVal;
+            Vector3 curDestVector = finalPosVec3 - transform.position;
+            float curDist = curDestVector.magnitude;
+            initialDist = Mathf.Max(initialDist, curDist);
+
+            if (curDist < 0.01f)
+                break;
+            
+            Vector3 dirVec = curDestVector.normalized;
+            float incrementVal = incrementValPercent;
+            
             if (curDist > 2 * initialDist / 3 || curDist < initialDist / 3)
             {
                 incrementVal = 2 * incrementValPercent;
