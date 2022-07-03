@@ -1,39 +1,9 @@
 fileFormatVersion: 2
-guid: 484a506acf5f6c7439959109e48cbf15
+guid: daa4ab1f254444549b9c78d215aa8d6d
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Black Pieces
-    second: {fileID: 2100000, guid: 743e5f152c1abd7448b1bcbac5aa2bb9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Black Square
-    second: {fileID: 2100000, guid: 4f994a9ace52bbb42bde9c10bf5ff0c4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bounding Board
-    second: {fileID: 2100000, guid: 921188981863c674b8d1aaa14b153085, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 72ddf63a8e4d7ae458ca2cb9ac8ee164, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: White Pieces
-    second: {fileID: 2100000, guid: 2d0e0497583295941ab21b869f6c17e9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: White Square
-    second: {fileID: 2100000, guid: 1590ea3fa75f1ea4fbed1ab84acf6863, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
