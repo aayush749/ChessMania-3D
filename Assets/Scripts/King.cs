@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class King : MonoBehaviour
+public class King : ChessPiece
 {
     [SerializeField]
     private float incrementValPercent = 2.5f;
-    string color;
 
-    public ChessDotNet.File col { get; private set; }
-    public int row { get; private set; }
     void OnEnable()
     {
         // convert percent to float

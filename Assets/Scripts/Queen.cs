@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Queen : MonoBehaviour
+public class Queen : ChessPiece
 {
     [SerializeField]
     private float incrementValPercent = 2.5f;
 
-    string color;
-
-    public ChessDotNet.File col { get; private set; }
-    public int row { get; private set; }
     void OnEnable()
     {
         color = name.Contains("White") ? "White" : "Black";

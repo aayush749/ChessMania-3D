@@ -4,7 +4,7 @@ using UnityEngine;
 using ChessDotNet;
 using System;
 
-public class ChessBoard : MonoBehaviour
+public class ChessBoard : ChessPiece
 {
     // Start is called before the first frame update
     private ChessGame game;

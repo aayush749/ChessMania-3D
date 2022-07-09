@@ -12,8 +12,24 @@ class PlayerInputManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject objSelecting = PieceSelector.GetObject();
-            Debug.Log($"Selected: {objSelecting.name}");
+            ChessPiece prevSelectedPiece = PieceSelector.currentPiece;
+            ChessPiece newPiece = PieceSelector.GetPiece();
+            if (newPiece != null)
+            {
+               
+                if (prevSelectedPiece != null && 
+                    newPiece.name != prevSelectedPiece.name)
+                {
+                    prevSelectedPiece.StopHighlighting();
+                }
+
+                Debug.Log($"Selected piece: {newPiece.name}");
+                newPiece.StartHighlighting(1.0f);
+            }
+            else if (prevSelectedPiece != null)
+            {
+                prevSelectedPiece.StopHighlighting();
+            }
         }
     }
 }

@@ -1,9 +1,14 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 class PieceSelector
 {
-    public static GameObject GetObject()
+    public static ChessPiece currentPiece { get; private set; }
+    private static Coroutine flashCoroutine;
+
+    // Updates currentPiece to be the piece currently being pointed at by the mouse
+    public static ChessPiece GetPiece()
     {
         Camera camera = MonoBehaviour.FindObjectOfType<Camera>();
         if (camera.name.Equals("Main Camera"))
@@ -14,8 +19,8 @@ class PieceSelector
             {
                 if (hit.collider != null)
                 {
-                    GameObject objectHit = GameObject.Find(hit.collider.gameObject.name);
-                    return objectHit;
+                    currentPiece = GameObject.Find(hit.collider.gameObject.name).GetComponent<ChessPiece>();
+                    return currentPiece;
                 }
             }
 

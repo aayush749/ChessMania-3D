@@ -3,16 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bishop : MonoBehaviour
+public class Bishop : ChessPiece
 {
+    private int id;
     [SerializeField]
     private float incrementValPercent = 2.5f;
 
-    int id;
-    string color;
-
-    public ChessDotNet.File col { get; private set; }
-    public int row { get; private set; }
 
     void OnEnable()
     {
